@@ -234,7 +234,7 @@ export class ITEM_DATA {
     }
 
     hatredDemon: Item = {
-        itemName: "HatredDemon",
+        itemName: "Hatred Demon",
         imageName: 'hatred_demon.png',
         className: 'item',
         obtained: false
