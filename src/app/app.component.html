@@ -1,0 +1,478 @@
+<nav class="navigation">
+  <section class="container">
+    <h4>Sekiro Randomizer Item Tracker</h4>
+    <ul class="navigation-list float-right">
+      <button (click)="clear()" class="button">Clear Progress</button>
+    </ul>
+  </section>
+  </nav>
+
+<div class="container c-main">
+
+  <div> <!-- Key Items -->
+    <h2>Key Items</h2>
+
+    <div class="row">
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.aromaticBranch.obtained ? '-clicked' : '')}}" (click)="itemClick(items.aromaticBranch)" src="{{'../assets/img/' + items.aromaticBranch.imageName}}"><br>
+          <span class="item-desc">{{items.aromaticBranch.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.mibuBreathing.obtained ? '-clicked' : '')}}" (click)="itemClick(items.mibuBreathing)" src="{{'../assets/img/' + items.mibuBreathing.imageName}}"><br>
+          <span class="item-desc">{{items.mibuBreathing.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.divineTears.obtained ? '-clicked' : '')}}" (click)="itemClick(items.divineTears)" src="{{'../assets/img/' + items.divineTears.imageName}}"><br>
+          <span class="item-desc">{{items.divineTears.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.secretPassage.obtained ? '-clicked' : '')}}" (click)="itemClick(items.secretPassage)" src="{{'../assets/img/' + items.secretPassage.imageName}}"><br>
+          <span class="item-desc">{{items.secretPassage.itemName}}</span>
+        </div>
+      </div>
+
+    </div> <br>
+
+    <div class="row">
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.shelterStone.obtained ? '-clicked' : '')}}" (click)="itemClick(items.shelterStone)" src="{{'../assets/img/' + items.shelterStone.imageName}}"><br>
+          <span class="item-desc">{{items.shelterStone.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.lotus.obtained ? '-clicked' : '')}}" (click)="itemClick(items.lotus)" src="{{'../assets/img/' + items.lotus.imageName}}"><br>
+          <span class="item-desc">{{items.lotus.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.mortalBlade.obtained ? '-clicked' : '')}}" (click)="itemClick(items.mortalBlade)" src="{{'../assets/img/' + items.mortalBlade.imageName}}"><br>
+          <span class="item-desc">{{items.mortalBlade.itemName}}</span>
+        </div>
+      </div>
+
+    </div>
+
+    <br>
+
+    <div class="row">
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.gatehouseKey.obtained ? '-clicked' : '')}}" (click)="itemClick(items.gatehouseKey)" src="{{'../assets/img/' + items.gatehouseKey.imageName}}"><br>
+          <span class="item-desc">{{items.gatehouseKey.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.gunfortKey.obtained ? '-clicked' : '')}}" (click)="itemClick(items.gunfortKey)" src="{{'../assets/img/' + items.gunfortKey.imageName}}"><br>
+          <span class="item-desc">{{items.gunfortKey.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.hiddenTempleKey.obtained ? '-clicked' : '')}}" (click)="itemClick(items.hiddenTempleKey)" src="{{'../assets/img/' + items.hiddenTempleKey.imageName}}"><br>
+          <span class="item-desc">{{items.hiddenTempleKey.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.youngLordsBell.obtained ? '-clicked' : '')}}" (click)="itemClick(items.youngLordsBell)" src="{{'../assets/img/' + items.youngLordsBell.imageName}}"><br>
+          <span class="item-desc">{{items.youngLordsBell.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.fathersBell.obtained ? '-clicked' : '')}}" (click)="itemClick(items.fathersBell)" src="{{'../assets/img/' + items.fathersBell.imageName}}"><br>
+          <span class="item-desc">{{items.fathersBell.itemName}}</span>
+        </div>
+      </div>
+
+    </div> <br>
+
+    <div class="row">
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.prosthetic.obtained ? '-clicked' : '')}}" (click)="itemClick(items.prosthetic)" src="{{'../assets/img/' + items.prosthetic.imageName}}"><br>
+          <span class="item-desc">{{items.prosthetic.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.puppeteer.obtained ? '-clicked' : '')}}" (click)="itemClick(items.puppeteer)" src="{{'../assets/img/' + items.puppeteer.imageName}}"><br>
+          <span class="item-desc">{{items.puppeteer.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.trueBait.obtained ? '-clicked' : '')}}" (click)="itemClick(items.trueBait)" src="{{'../assets/img/' + items.trueBait.imageName}}"><br>
+          <span class="item-desc">{{items.trueBait.itemName}}</span>
+        </div>
+      </div>
+
+    </div> <br>
+
+    <h2>Quest Items</h2>
+
+    <div class="row">
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.dragonstally.obtained ? '-clicked' : '')}}" (click)="itemClick(items.dragonstally)" src="{{'../assets/img/' + items.dragonstally.imageName}}"><br>
+          <span class="item-desc">{{items.dragonstally.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.freshSerpent.obtained ? '-clicked' : '')}}" (click)="itemClick(items.freshSerpent)" src="{{'../assets/img/' + items.freshSerpent.imageName}}"><br>
+          <span class="item-desc">{{items.freshSerpent.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.driedSerpent.obtained ? '-clicked' : '')}}" (click)="itemClick(items.driedSerpent)" src="{{'../assets/img/' + items.driedSerpent.imageName}}"><br>
+          <span class="item-desc">{{items.driedSerpent.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.whiteWhisker.obtained ? '-clicked' : '')}}" (click)="itemClick(items.whiteWhisker)" src="{{'../assets/img/' + items.whiteWhisker.imageName}}"><br>
+          <span class="item-desc">{{items.whiteWhisker.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.infested.obtained ? '-clicked' : '')}}" (click)="itemClick(items.infested)" src="{{'../assets/img/' + items.infested.imageName}}"><br>
+          <span class="item-desc">{{items.infested.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.dragonsReturn.obtained ? '-clicked' : '')}}" (click)="itemClick(items.dragonsReturn)" src="{{'../assets/img/' + items.dragonsReturn.imageName}}"><br>
+          <span class="item-desc">{{items.dragonsReturn.itemName}}</span>
+        </div>
+      </div>
+
+    </div> <br>
+
+    <div class="row">
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.redWhitePinwheel.obtained ? '-clicked' : '')}}" (click)="itemClick(items.redWhitePinwheel)" src="{{'../assets/img/' + items.redWhitePinwheel.imageName}}"><br>
+          <span class="item-desc">{{items.redWhitePinwheel.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.redCarpEyes.obtained ? '-clicked' : '')}}" (click)="itemClick(items.redCarpEyes)" src="{{'../assets/img/' + items.redCarpEyes.imageName}}"><br>
+          <span class="item-desc">{{items.redCarpEyes.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.riceForKuro.obtained ? '-clicked' : '')}}" (click)="itemClick(items.riceForKuro)" src="{{'../assets/img/' + items.riceForKuro.imageName}}"><br>
+          <span class="item-desc">{{items.riceForKuro.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.persimmon.obtained ? '-clicked' : '')}}" (click)="itemClick(items.persimmon)" src="{{'../assets/img/' + items.persimmon.imageName}}"><br>
+          <span class="item-desc">{{items.persimmon.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.waterPalace.obtained ? '-clicked' : '')}}" (click)="itemClick(items.waterPalace)" src="{{'../assets/img/' + items.waterPalace.imageName}}"><br>
+          <span class="item-desc">{{items.waterPalace.itemName}}</span>
+        </div>
+      </div>
+
+    </div> <br>
+
+    <h2>Memories</h2>
+
+    <div class="row">
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.ladyButterfly.obtained ? '-clicked' : '')}}" (click)="itemClick(items.ladyButterfly)" src="{{'../assets/img/' + items.ladyButterfly.imageName}}"><br>
+          <span class="item-desc">{{items.ladyButterfly.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.gyoubuOniwa.obtained ? '-clicked' : '')}}" (click)="itemClick(items.gyoubuOniwa)" src="{{'../assets/img/' + items.gyoubuOniwa.imageName}}"><br>
+          <span class="item-desc">{{items.gyoubuOniwa.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.genichiro.obtained ? '-clicked' : '')}}" (click)="itemClick(items.genichiro)" src="{{'../assets/img/' + items.genichiro.imageName}}"><br>
+          <span class="item-desc">{{items.genichiro.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.corruptedMonk.obtained ? '-clicked' : '')}}" (click)="itemClick(items.corruptedMonk)" src="{{'../assets/img/' + items.corruptedMonk.imageName}}"><br>
+          <span class="item-desc">{{items.corruptedMonk.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.screenMonkeys.obtained ? '-clicked' : '')}}" (click)="itemClick(items.screenMonkeys)" src="{{'../assets/img/' + items.screenMonkeys.imageName}}"><br>
+          <span class="item-desc">{{items.screenMonkeys.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.guardianApe.obtained ? '-clicked' : '')}}" (click)="itemClick(items.guardianApe)" src="{{'../assets/img/' + items.guardianApe.imageName}}"><br>
+          <span class="item-desc">{{items.guardianApe.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.greatShinobi.obtained ? '-clicked' : '')}}" (click)="itemClick(items.greatShinobi)" src="{{'../assets/img/' + items.greatShinobi.imageName}}"><br>
+          <span class="item-desc">{{items.greatShinobi.itemName}}</span>
+        </div>
+      </div>
+
+    </div> <br>
+
+    <div class="row">
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.isshinAshina.obtained ? '-clicked' : '')}}" (click)="itemClick(items.isshinAshina)" src="{{'../assets/img/' + items.isshinAshina.imageName}}"><br>
+          <span class="item-desc">{{items.isshinAshina.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.headlessApe.obtained ? '-clicked' : '')}}" (click)="itemClick(items.headlessApe)" src="{{'../assets/img/' + items.headlessApe.imageName}}"><br>
+          <span class="item-desc">{{items.headlessApe.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.fosterFather.obtained ? '-clicked' : '')}}" (click)="itemClick(items.fosterFather)" src="{{'../assets/img/' + items.fosterFather.imageName}}"><br>
+          <span class="item-desc">{{items.fosterFather.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.trueMonk.obtained ? '-clicked' : '')}}" (click)="itemClick(items.trueMonk)" src="{{'../assets/img/' + items.trueMonk.imageName}}"><br>
+          <span class="item-desc">{{items.trueMonk.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.divineDragon.obtained ? '-clicked' : '')}}" (click)="itemClick(items.divineDragon)" src="{{'../assets/img/' + items.divineDragon.imageName}}"><br>
+          <span class="item-desc">{{items.divineDragon.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.hatredDemon.obtained ? '-clicked' : '')}}" (click)="itemClick(items.hatredDemon)" src="{{'../assets/img/' + items.hatredDemon.imageName}}"><br>
+          <span class="item-desc">{{items.hatredDemon.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.saintIsshin.obtained ? '-clicked' : '')}}" (click)="itemClick(items.saintIsshin)" src="{{'../assets/img/' + items.saintIsshin.imageName}}"><br>
+          <span class="item-desc">{{items.saintIsshin.itemName}}</span>
+        </div>
+      </div>
+
+    </div> <br>
+
+    <h2>Upgrades</h2>
+
+    <div class="row">
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.shinobiText.obtained ? '-clicked' : '')}}" (click)="itemClick(items.shinobiText)" src="{{'../assets/img/' + items.shinobiText.imageName}}"><br>
+          <span class="item-desc">{{items.shinobiText.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.prostheticText.obtained ? '-clicked' : '')}}" (click)="itemClick(items.prostheticText)" src="{{'../assets/img/' + items.prostheticText.imageName}}"><br>
+          <span class="item-desc">{{items.prostheticText.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.ashinaText.obtained ? '-clicked' : '')}}" (click)="itemClick(items.ashinaText)" src="{{'../assets/img/' + items.ashinaText.imageName}}"><br>
+          <span class="item-desc">{{items.ashinaText.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.senpouText.obtained ? '-clicked' : '')}}" (click)="itemClick(items.senpouText)" src="{{'../assets/img/' + items.senpouText.imageName}}"><br>
+          <span class="item-desc">{{items.senpouText.itemName}}</span>
+        </div>
+      </div>
+
+    </div> <br>
+
+    <div class="row">
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.shurikenWheel.obtained ? '-clicked' : '')}}" (click)="itemClick(items.shurikenWheel)" src="{{'../assets/img/' + items.shurikenWheel.imageName}}"><br>
+          <span class="item-desc">{{items.shurikenWheel.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.shinobiAxe.obtained ? '-clicked' : '')}}" (click)="itemClick(items.shinobiAxe)" src="{{'../assets/img/' + items.shinobiAxe.imageName}}"><br>
+          <span class="item-desc">{{items.shinobiAxe.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.flameBarrel.obtained ? '-clicked' : '')}}" (click)="itemClick(items.flameBarrel)" src="{{'../assets/img/' + items.flameBarrel.imageName}}"><br>
+          <span class="item-desc">{{items.flameBarrel.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.firecrackers.obtained ? '-clicked' : '')}}" (click)="itemClick(items.firecrackers)" src="{{'../assets/img/' + items.firecrackers.imageName}}"><br>
+          <span class="item-desc">{{items.firecrackers.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.mistRaven.obtained ? '-clicked' : '')}}" (click)="itemClick(items.mistRaven)" src="{{'../assets/img/' + items.mistRaven.imageName}}"><br>
+          <span class="item-desc">{{items.mistRaven.itemName}}</span>
+        </div>
+      </div>
+
+    </div> <br>
+
+    <div class="row">
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.gyoubuHorn.obtained ? '-clicked' : '')}}" (click)="itemClick(items.gyoubuHorn)" src="{{'../assets/img/' + items.gyoubuHorn.imageName}}"><br>
+          <span class="item-desc">{{items.gyoubuHorn.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.ironFortress.obtained ? '-clicked' : '')}}" (click)="itemClick(items.ironFortress)" src="{{'../assets/img/' + items.ironFortress.imageName}}"><br>
+          <span class="item-desc">{{items.ironFortress.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.largeFan.obtained ? '-clicked' : '')}}" (click)="itemClick(items.largeFan)" src="{{'../assets/img/' + items.largeFan.imageName}}"><br>
+          <span class="item-desc">{{items.largeFan.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.slenderFinger.obtained ? '-clicked' : '')}}" (click)="itemClick(items.slenderFinger)" src="{{'../assets/img/' + items.slenderFinger.imageName}}"><br>
+          <span class="item-desc">{{items.slenderFinger.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.sabimaru.obtained ? '-clicked' : '')}}" (click)="itemClick(items.sabimaru)" src="{{'../assets/img/' + items.sabimaru.imageName}}"><br>
+          <span class="item-desc">{{items.sabimaru.itemName}}</span>
+        </div>
+      </div>
+
+    </div> <br>
+
+    <div class="row">
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.mechanicalBarrel.obtained ? '-clicked' : '')}}" (click)="itemClick(items.mechanicalBarrel)" src="{{'../assets/img/' + items.mechanicalBarrel.imageName}}"><br>
+          <span class="item-desc">{{items.mechanicalBarrel.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.phantomKunai.obtained ? '-clicked' : '')}}" (click)="itemClick(items.phantomKunai)" src="{{'../assets/img/' + items.phantomKunai.imageName}}"><br>
+          <span class="item-desc">{{items.phantomKunai.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.malcontentRing.obtained ? '-clicked' : '')}}" (click)="itemClick(items.malcontentRing)" src="{{'../assets/img/' + items.malcontentRing.imageName}}"><br>
+          <span class="item-desc">{{items.malcontentRing.itemName}}</span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="item">
+          <img class="{{classNamePrefix + ( items.pineResinEmber.obtained ? '-clicked' : '')}}" (click)="itemClick(items.pineResinEmber)" src="{{'../assets/img/' + items.pineResinEmber.imageName}}"><br>
+          <span class="item-desc">{{items.pineResinEmber.itemName}}</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
